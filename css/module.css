@@ -1,0 +1,62 @@
+.card__col {
+  color: var(--cl-very-light-gray);
+  background-repeat: no-repeat !important;
+  background-position: top 3rem left 3rem !important;
+}
+
+.card__col--orange {
+  --bg-color: var(--bg-bright-orange);
+  background: url("/images/icon-sedans.svg") var(--bg-color);
+
+  border-radius: var(--rad-col-strt);
+}
+
+.card__col--lightteal {
+  --bg-color: var(--bg-dark-cyan);
+  background: url("/images/icon-luxury.svg") var(--bg-color);
+}
+
+.card__col--darkteal {
+  --bg-color: var(--bg-very-dark-cyan);
+  background: url("/images/icon-suvs.svg") var(--bg-color);
+
+  border-radius: var(--rad-col-end);
+}
+
+.col__title {
+  font-size: 2rem;
+  font-family: var(--ff-acc);
+  text-transform: uppercase;
+}
+
+.col__description {
+  color: var(--cl-transparent-white);
+}
+
+.col__btn {
+  height: 3rem;
+  border: 0;
+  color: var(--bg-color);
+
+  padding-inline: 2.5rem;
+  
+  font-family: inherit;
+  font-size: .85rem;
+  font-weight: 400 ;
+  border-radius: 2rem;
+  transition: 150ms ease;
+  outline : 1px solid #fff;
+}
+
+.col__btn:hover {
+  outline : 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+@media (min-width: 700px) {
+  :root {
+  --rad-col-strt: .5rem 0 0 .5rem  ;
+  --rad-col-end: 0 .5rem .5rem 0;
+  }
+}

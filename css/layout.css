@@ -1,0 +1,36 @@
+.card__col {
+  display: grid;
+  align-items: end;
+  padding: min(3rem, 9rem) 2rem 2rem;
+
+  height: min( 28rem, 500px);
+  max-width: 300px;
+
+}
+
+.card__col .col__body {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+
+.col__btn {
+  align-self: end;
+  justify-self: left;
+}
+
+
+@media (min-width: 700px) {
+  .card {
+    display: grid;
+    margin: auto;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3 , 1fr)
+  }
+
+  .card__col {
+    max-width: 700px ;
+    height: min( 30rem, 500px);
+  }
+}

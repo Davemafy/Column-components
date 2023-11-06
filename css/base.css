@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-bright-orange: hsl(31, 77%, 52%);
+  --bg-dark-cyan: hsl(184, 100%, 22%);
+  --bg-very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* paragraphs */
+  --cl-transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* background, headings, buttons */
+  --cl-very-light-gray: hsl(0, 0%, 95%);
+
+  --rad-col-strt: .5rem .5rem 0 0;
+  --rad-col-end: 0 0 .5rem .5rem;
+
+  --ff-base: "Lexend Deca";
+  --ff-acc: "Big Shoulders Display";
+
+  --fz-base: 15px;
+
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 900px;
+  background: var(--cl-very-light-gray);
+
+  margin: auto;
+  padding: 5rem 2rem;
+
+  line-height: 1.7;
+  font-family: var(--ff-base);
+  font-size: var(--fz-base);
+}
